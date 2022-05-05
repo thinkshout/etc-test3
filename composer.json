@@ -9,6 +9,10 @@
             "url": "https:\/\/packages.drupal.org\/8"
         },
         {
+            "type": "git",
+            "url": "https://github.com/thinkshout/ncyl"
+        },
+        {
             "type": "path",
             "url": "upstream-configuration"
         }
@@ -21,7 +25,8 @@
         "drush-ops/behat-drush-endpoint": "^9.4",
         "drush/drush": "^10",
         "pantheon-systems/drupal-integrations": "^9",
-        "pantheon-upstreams/upstream-configuration": "*"
+        "pantheon-upstreams/upstream-configuration": "*",
+        "thinkshout/ncyl": "dev-module_updates_120"
     },
     "require-dev": {
         "behat/behat": "^3.10",
@@ -58,6 +63,7 @@
                 "[project-root]\/.gitattributes": false
             }
         },
+        "enable-patching": true,
         "installer-paths": {
             "web\/core": [
                 "type:drupal-core"
@@ -108,7 +114,8 @@
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "composer/installers": true,
             "cweagans/composer-patches": true,
-            "drupal/core-composer-scaffold": true
+            "drupal/core-composer-scaffold": true,
+            "drupal/console-extend-plugin": true
         }
     },
     "scripts": {
